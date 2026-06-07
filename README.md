@@ -60,12 +60,17 @@ git clone https://github.com/martinamayoriconi-collab/52042.git
 
 Si tu salida termina en Resolving deltas: 100% (12/12), done.
 
-Ahora pon:
+Ahora pon en orden y por separado:
 
 cd 52042
 
-y
-
 code .
 
+Por ultimo abre otra terminal en el proyecto ya copiado y pon:
+
+npm install antlr4 prompt-sync
+
+ó
+
+npm.cmd install antlr4 prompt-sync
 Con eso deberia abrirle el proyecto editable en el visual studio code de su dispositivo.
