@@ -1,0 +1,17 @@
+{
+  "name": "analizador-52042",
+  "version": "1.0.0",
+  "description": "Construccion de un Analizador con ANTLR4 y JavaScript\r Tema: 25914_14\r Se proporciona una gramática de notación EBNF que describe un lenguaje específico. \r Utilizando ANTLR4 con JavaScript, implemente un analizador que procese un archivo de entrada input.txt con código fuente \r escrito en dicho lenguaje.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "antlr4": "^4.13.2",
+    "prompt-sync": "^4.2.0"
+  }
+}

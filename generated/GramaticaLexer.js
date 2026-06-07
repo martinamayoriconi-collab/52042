@@ -1,0 +1,70 @@
+// Generated from Gramatica.g4 by ANTLR 4.13.2
+// jshint ignore: start
+import antlr4 from 'antlr4';
+
+
+const serializedATN = [4,0,15,64,6,-1,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,
+4,7,4,2,5,7,5,2,6,7,6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,
+12,2,13,7,13,2,14,7,14,1,0,4,0,33,8,0,11,0,12,0,34,1,1,1,1,1,2,1,2,1,3,1,
+3,1,4,1,4,1,5,1,5,1,6,1,6,1,7,1,7,1,8,1,8,1,9,1,9,1,10,1,10,1,11,1,11,1,
+12,1,12,1,13,1,13,1,14,1,14,0,0,15,1,1,3,2,5,3,7,4,9,5,11,6,13,7,15,8,17,
+9,19,10,21,11,23,12,25,13,27,14,29,15,1,0,2,1,0,48,57,4,0,40,45,63,63,91,
+94,123,125,64,0,1,1,0,0,0,0,3,1,0,0,0,0,5,1,0,0,0,0,7,1,0,0,0,0,9,1,0,0,
+0,0,11,1,0,0,0,0,13,1,0,0,0,0,15,1,0,0,0,0,17,1,0,0,0,0,19,1,0,0,0,0,21,
+1,0,0,0,0,23,1,0,0,0,0,25,1,0,0,0,0,27,1,0,0,0,0,29,1,0,0,0,1,32,1,0,0,0,
+3,36,1,0,0,0,5,38,1,0,0,0,7,40,1,0,0,0,9,42,1,0,0,0,11,44,1,0,0,0,13,46,
+1,0,0,0,15,48,1,0,0,0,17,50,1,0,0,0,19,52,1,0,0,0,21,54,1,0,0,0,23,56,1,
+0,0,0,25,58,1,0,0,0,27,60,1,0,0,0,29,62,1,0,0,0,31,33,7,0,0,0,32,31,1,0,
+0,0,33,34,1,0,0,0,34,32,1,0,0,0,34,35,1,0,0,0,35,2,1,0,0,0,36,37,8,1,0,0,
+37,4,1,0,0,0,38,39,5,124,0,0,39,6,1,0,0,0,40,41,5,40,0,0,41,8,1,0,0,0,42,
+43,5,41,0,0,43,10,1,0,0,0,44,45,5,42,0,0,45,12,1,0,0,0,46,47,5,43,0,0,47,
+14,1,0,0,0,48,49,5,63,0,0,49,16,1,0,0,0,50,51,5,123,0,0,51,18,1,0,0,0,52,
+53,5,125,0,0,53,20,1,0,0,0,54,55,5,91,0,0,55,22,1,0,0,0,56,57,5,93,0,0,57,
+24,1,0,0,0,58,59,5,44,0,0,59,26,1,0,0,0,60,61,5,45,0,0,61,28,1,0,0,0,62,
+63,5,94,0,0,63,30,1,0,0,0,2,0,34,0];
+
+
+const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
+
+const decisionsToDFA = atn.decisionToState.map( (ds, index) => new antlr4.dfa.DFA(ds, index) );
+
+export default class GramaticaLexer extends antlr4.Lexer {
+
+    static grammarFileName = "Gramatica.g4";
+    static channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
+	static modeNames = [ "DEFAULT_MODE" ];
+	static literalNames = [ null, null, null, "'|'", "'('", "')'", "'*'", "'+'", 
+                         "'?'", "'{'", "'}'", "'['", "']'", "','", "'-'", 
+                         "'^'" ];
+	static symbolicNames = [ null, "NUMBER", "CHAR", "BARRA", "LPAR", "RPAR", 
+                          "MULT", "SUM", "QUES", "LKEY", "RKEY", "LCOR", 
+                          "RCOR", "COMA", "BALTA", "EXP" ];
+	static ruleNames = [ "NUMBER", "CHAR", "BARRA", "LPAR", "RPAR", "MULT", 
+                      "SUM", "QUES", "LKEY", "RKEY", "LCOR", "RCOR", "COMA", 
+                      "BALTA", "EXP" ];
+
+    constructor(input) {
+        super(input)
+        this._interp = new antlr4.atn.LexerATNSimulator(this, atn, decisionsToDFA, new antlr4.atn.PredictionContextCache());
+    }
+}
+
+GramaticaLexer.EOF = antlr4.Token.EOF;
+GramaticaLexer.NUMBER = 1;
+GramaticaLexer.CHAR = 2;
+GramaticaLexer.BARRA = 3;
+GramaticaLexer.LPAR = 4;
+GramaticaLexer.RPAR = 5;
+GramaticaLexer.MULT = 6;
+GramaticaLexer.SUM = 7;
+GramaticaLexer.QUES = 8;
+GramaticaLexer.LKEY = 9;
+GramaticaLexer.RKEY = 10;
+GramaticaLexer.LCOR = 11;
+GramaticaLexer.RCOR = 12;
+GramaticaLexer.COMA = 13;
+GramaticaLexer.BALTA = 14;
+GramaticaLexer.EXP = 15;
+
+
+

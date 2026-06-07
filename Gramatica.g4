@@ -1,0 +1,25 @@
+grammar Gramatica;
+
+regex: term ( BARRA term)*;
+term: factor+;
+factor: base (quantifier)?;
+base: CHAR | group | class;
+group: LPAR  regex RPAR;
+class: LCOR EXP? (range | CHAR)+ RCOR;
+range: CHAR BALTA CHAR;
+quantifier: MULT | SUM | QUES | LKEY NUMBER (COMA (NUMBER)?)? RKEY;
+NUMBER:[0-9]+;
+CHAR: ~[|*+?(){}[\]\\,^-];
+BARRA: '|';
+LPAR: '(';
+RPAR: ')';
+MULT: '*';
+SUM: '+';
+QUES: '?';
+LKEY: '{';
+RKEY: '}';
+LCOR: '[';
+RCOR: ']';
+COMA: ',';
+BALTA: '-';
+EXP: '^';
